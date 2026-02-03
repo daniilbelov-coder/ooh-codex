@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "Генератор макетов наружной рекламы из ТТ",
   "scripts": {
+    "start": "node server.js",
     "build": "esbuild plugin-controller.ts --bundle --outfile=plugin-controller.js --platform=browser && esbuild ui.ts --bundle --outfile=ui.js --platform=browser",
     "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^2.0.6"
   },
   "devDependencies": {
     "esbuild": "^0.20.0",
