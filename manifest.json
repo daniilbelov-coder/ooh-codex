@@ -1,0 +1,11 @@
+{
+  "name": "OOH Codex",
+  "id": "ooh-ad-generator",
+  "api": "1.0.0",
+  "main": "plugin-controller.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["https://api.replicate.com"]
+  }
+}

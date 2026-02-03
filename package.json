@@ -1,0 +1,14 @@
+{
+  "name": "ooh-ad-generator",
+  "version": "1.0.0",
+  "description": "Генератор макетов наружной рекламы из ТТ",
+  "scripts": {
+    "build": "esbuild plugin-controller.ts --bundle --outfile=plugin-controller.js --platform=browser && esbuild ui.ts --bundle --outfile=ui.js --platform=browser",
+    "watch": "npm run build -- --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "@figma/plugin-typings": "^1.98.0",
+    "typescript": "^5.3.0"
+  }
+}
